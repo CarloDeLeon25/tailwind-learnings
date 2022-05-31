@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        <h2>Breakpoints</h2>
+        <p>If the screen display becomes less than 640px, the text will be centered. And if the screen is greater than
+            640px, the text will be left-aligned.</p>
+        <p class=" container mx-auto text-center sm:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Doloribus maxime
+            ea voluptates, esse ab, quod aliquid tenetur ratione culpa illum corporis quae corrupti natus aut deserunt
+            qui ipsum quam, earum temporibus. Voluptatibus aperiam cupiditate sequi sapiente ipsum soluta nihil
+            assumenda blanditiis natus doloremque, consequuntur repellendus quaerat est praesentium necessitatibus,
+            labore quam cum ullam sit dicta nulla laudantium! Soluta iste aspernatur maiores eligendi et iusto nisi
+            itaque in ab! Voluptas, fuga. Commodi, et cum repudiandae aperiam incidunt laborum! Dicta voluptatibus, est
+            distinctio facere, harum velit nisi deserunt officia placeat alias eaque deleniti iusto, nam omnis. Maxime
+            aspernatur adipisci impedit sit sapiente.</p>
+    </div>
+    <div>
+        <h2>Columns</h2>
+        <p>Responsive columns, large devices will display 5 columns, medium will display 3 columns, and minimum width
+            will display 1 column.</p>
+        <div class="gap-2 lg:columns-5 md:columns-3 sm:columns-1">
+            <img src="1.jpg" class="pb-2 w-full aspect-square">
+            <img src="2.jpg" class="pb-2 w-full aspect-square">
+            <img src="3.jpg" class="pb-2 w-full aspect-square">
+            <img src="4.jpg" class="pb-2 w-full aspect-square">
+            <img src="5.jpg" class="pb-2 w-full aspect-square">
+            <img src="6.jpg" class="pb-2 w-full aspect-square">
+            <img src="7.jpg" class="pb-2 w-full aspect-square">
+            <img src="8.jpg" class="pb-2 w-full aspect-square">
+            <img src="9.jpg" class="pb-2 w-full aspect-square">
+            <img src="10.jpg" class="pb-2 w-full aspect-square">
+        </div>
+        <h2>Box Decoration Break</h2>
+        <span class="box-decoration-slice bg-gradient-to-r from-sky-500 to-yellow-500 text-white px-2">
+            Hello<br>
+            World
+        </span>
+        <br>
+        <span class="box-decoration-clone bg-gradient-to-r from-sky-500 to-yellow-500 text-white px-2">
+            Hello<br>
+            World
+        </span>
+        <h2>Box Sizing</h2>
+        <div class="box-border h-60 w-60 p-4 border-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta repellat architecto laboriosam?
+                Sunt laboriosam atque beatae cumque at error quaerat, perferendis quasi optio voluptatem maxime labore
+                veniam aut sed.</p>
+        </div>
+        <h2>Display</h2>
+        <P>Inline display wraps the item normally. Inline block will wrap itself at the beginning. Inline block will
+            make its own line and fill.</P>
+        <div class="container bg-blue-500 mx-auto px-4 py-4 text-center">
+            <div class="bg-gray-200 p04">
+                <span class="inline text-gray-700 text-center bg-gray-500 px-4 py-2 ">Box 1</span>
+                <span class="inline text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 2</span>
+                <span class="inline text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 3</span>
+            </div>
+            <div class="bg-gray-200 p04">
+                <span class="inline-block text-gray-700 text-center bg-gray-500 px-4 py-2 ">Box 1</span>
+                <span class="inline-block text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 2</span>
+                <span class="inline-block text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 3</span>
+            </div>
+            <div class="bg-gray-200 p04">
+                <span class="block text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 1</span>
+                <span class="block text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 2</span>
+                <span class="block text-gray-700 text-center bg-gray-500 px-4 py-2 mt-3">Box 3</span>
+            </div>
+        </div>
+        <h2>Grid</h2>
+        <div>
+            <p>Grid</p>
+            <div class="grid gap-4 grid-cols-3 grid-rows-3">
+                <div class="video h-auto bg-slate-500">Box 1</div>
+                <div class="video h-auto bg-slate-500">Box 2</div>
+                <div class="video h-auto bg-slate-500">Box 3</div>
+                <div class="video h-auto bg-slate-500">Box 4</div>
+                <div class="video h-auto bg-slate-500">Box 5</div>
+                <div class="video h-auto bg-slate-500">Box 6</div>
+                <div class="video h-auto bg-slate-500">Box 7</div>
+                <div class="video h-auto bg-slate-500">Box 8</div>
+                <div class="video h-auto bg-slate-500">Box 9</div>
+            </div>
+            <p>Inline grid</p>
+            <div class="inline-grid gap-4 grid-cols-3 grid-rows-3">
+                <div class="video h-auto bg-slate-500">Box 1</div>
+                <div class="video h-auto bg-slate-500">Box 2</div>
+                <div class="video h-auto bg-slate-500">Box 3</div>
+                <div class="video h-auto bg-slate-500">Box 4</div>
+                <div class="video h-auto bg-slate-500">Box 5</div>
+                <div class="video h-auto bg-slate-500">Box 6</div>
+                <div class="video h-auto bg-slate-500">Box 7</div>
+                <div class="video h-auto bg-slate-500">Box 8</div>
+                <div class="video h-auto bg-slate-500">Box 9</div>
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
