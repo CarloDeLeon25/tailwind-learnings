@@ -282,7 +282,386 @@
                     ex dolores voluptates quod accusamus accusantium ipsam id!</p>
             </div>
         </div>
-
+    </div>
+    <div class="text-2xl">Flexbox and Grid</div>
+    <div>Flex Basis</div>
+    <div class="container mx-auto flex flex-row gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex Direction</div>
+    <div>Flex row reverse</div>
+    <div class="container mx-auto flex flex-row-reverse gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex column</div>
+    <div class="container mx-auto flex flex-col gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex column reversed</div>
+    <div class="container mx-auto flex flex-col-reverse gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex column reversed</div>
+    <div>Flex wrap</div>
+    <div class="container mx-auto flex flex-wrap gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex wrap reverse</div>
+    <div class="container mx-auto flex flex-wrap-reverse gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex nowrap</div>
+    <div class="container mx-auto flex flex-nowrap gap-2.5 bg-slate-100">
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 1</div>
+        <div class="basis-1/2 bg-slate-300 h-16 text-center">Box 2</div>
+        <div class="basis-1/4 bg-slate-300 h-16 text-center">Box 3</div>
+    </div>
+    <div>Flex</div>
+    <p>Flex initial allows the item to shrink but not grow</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-64 text-center flex-initial">Box 1</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-initial">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center flex-none">Box 3</div>
+    </div>
+    <p>Flex 1 takes the needed size of an item regardless of the size assigned to it</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-64 text-center flex-1">Box 1</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-1">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center flex-none">Box 3</div>
+    </div>
+    <p>Flex auto allows the item to grow or shrink with respect to the inital size</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center flex-auto">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center flex-auto">Box 2</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-auto">Box 3</div>
+    </div>
+    <p>Flex none will stop the item from growing or shrinking</p>
+    <div class="container mx-auto flex gap-2.5">
+        <div class="bg-slate-300 h-16 w-32 text-center flex-auto">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center flex-auto">Box 2</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-none">Box 3</div>
+    </div>
+    <p>Flex grow</p>
+    <p>Flex grow takes the maximum available width</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center grow">Box 1</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-none">Box 2</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-none">Box 3</div>
+    </div>
+    <p>Flex grow-0 stops a flex item from growing</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center grow">Box 1</div>
+        <div class="bg-slate-300 h-16 w-64 text-center grow-0">Box 2</div>
+        <div class="bg-slate-300 h-16 w-64 text-center grow">Box 3</div>
+    </div>
+    <p>Flex shrink</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center flex-none">Box 1</div>
+        <div class="bg-slate-300 h-16 w-64 text-center shrink">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center flex-none">Box 3</div>
+    </div>
+    <p>Shrink-0</p>
+    <div class="container mx-auto flex gap-2.5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-64 text-center flex-none">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center shrink-0">Box 2</div>
+        <div class="bg-slate-300 h-16 w-64 text-center flex-none">Box 3</div>
+    </div>
+    <p>Grid Template Columns</p>
+    <p>Grid with a column of 5</p>
+    <div class="container mx-auto grid grid-cols-5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 7</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 8</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 9</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 10</div>
+    </div>
+    <p>Grid Template Rows</p>
+    <p>Grid with a row of 2</p>
+    <div class="container mx-auto grid grid-rows-2 grid-flow-col bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 7</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 8</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 9</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 10</div>
+    </div>
+    <p>Grid Gaps</p>
+    <p>Grid gap with a 5px column and row gap</p>
+    <div class="container mx-auto grid grid-cols-5 gap-x-5 gap-y-5 bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 7</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 8</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 9</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 10</div>
+    </div>
+    <p>Justify Content</p>
+    <p>Justify start</p>
+    <div class="container mx-auto flex justify-start bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+    </div>
+    <p>Justify center</p>
+    <div class="container mx-auto flex justify-center bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+    </div>
+    <p>Justify end</p>
+    <div class="container mx-auto flex justify-end bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+    </div>
+    <p>Justify around</p>
+    <div class="container mx-auto flex justify-around bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+    </div>
+    <p>Justify between</p>
+    <div class="container mx-auto flex justify-between bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+    </div>
+    <p>Justify evenly</p>
+    <div class="container mx-auto flex justify-evenly bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+    </div>
+    <p>Justify Items</p>
+    <p>Justify items start</p>
+    <div class="container mx-auto grid grid-cols-3 justify-items-start bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Justify items center</p>
+    <div class="container mx-auto grid grid-cols-3 justify-items-center bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Justify items end</p>
+    <div class="container mx-auto grid grid-cols-3 justify-items-end bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Justify Self</p>
+    <p>Justify self start</p>
+    <div class="container mx-auto grid grid-cols-3 justify-items-stretch bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border justify-self-start">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Justify self center</p>
+    <div class="container mx-auto grid grid-cols-3 justify-items-stretch bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border justify-self-center">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Justify self end</p>
+    <div class="container mx-auto grid grid-cols-3 justify-items-stretch bg-slate-100">
+        <div class="bg-slate-300 h-16 w-32 text-center border justify-self-end">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Align Content</p>
+    <p>Content start</p>
+    <div class="container h-56 mx-auto grid grid-cols-3 bg-slate-100 content-start">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+    </div>
+    <p>Content center</p>
+    <div class="container h-56 mx-auto grid grid-cols-3 bg-slate-100 content-center">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+    </div>
+    <p>Content center</p>
+    <div class="container h-56 mx-auto grid grid-cols-3 bg-slate-100 content-center">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+    </div>
+    <p>Align Items</p>
+    <p>Align items start</p>
+    <div class="container mx-auto gap-20 bg-slate-100 flex items-start">
+        <div class="bg-slate-300 h-16 w-32 py-8 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 py-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 py-8 text-center border">Box 3</div>
+    </div>
+    <p>Align items center</p>
+    <div class="container mx-auto gap-20 bg-slate-100 flex items-center">
+        <div class="bg-slate-300 h-16 w-32 py-8 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 py-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 py-8 text-center border">Box 3</div>
+    </div>
+    <p>Align items end</p>
+    <div class="container mx-auto gap-20 bg-slate-100 flex items-end">
+        <div class="bg-slate-300 h-16 w-32 py-8 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 py-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 py-8 text-center border">Box 3</div>
+    </div>
+    <p>Align items baseline</p>
+    <div class="container mx-auto gap-20 bg-slate-100 flex items-baseline">
+        <div class="bg-slate-300 h-16 w-32 pt-8 pb-4 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 pt-4 pb-12 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 pt-12 pb-6 text-center border">Box 3</div>
+    </div>
+    <p>Place Content</p>
+    <p>Place center</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-2 place-content-center h-48">
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 4</div>
+    </div><br>
+    <p>Place start</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-2 place-content-start h-48">
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 4</div>
+    </div><br>
+    <p>Place end</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-2 place-content-end h-48">
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 4</div>
+    </div><br>
+    <p>Space between</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-2 place-content-between h-48">
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 4</div>
+    </div><br>
+    <p>Space around</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-2 place-content-around h-48">
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 4</div>
+    </div><br>
+    <p>Space evenly</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-2 place-content-evenly h-48">
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-16 text-center border">Box 4</div>
+    </div>
+    <p>Place Items</p>
+    <p>Place item start</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-3 place-items-start h-48">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Place item center</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-3 place-items-center h-48">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Place item end</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-3 place-items-end h-48">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Place Self</p>
+    <p>Place self start</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-3 h-48">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border place-self-start">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Place self center</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-3 h-48">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border place-self-center">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
+    <p>Place self end</p>
+    <div class="container mx-auto bg-slate-100 grid grid-cols-3 h-48">
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 1</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 2</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 3</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border place-self-end">Box 4</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 5</div>
+        <div class="bg-slate-300 h-16 w-32 text-center border">Box 6</div>
+    </div>
 
 </body>
 
